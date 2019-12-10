@@ -46,8 +46,10 @@ margin-top: 5px;
 }
 
 #nav-ul {
-	position: absolute;
-	right:30px;
+    display: inline-block;
+	margin-left: 1010px;
+	position: relative;
+	top: -20px;
 }
 
 .nav a {

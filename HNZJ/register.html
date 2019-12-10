@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>河南职业技术学院教务系统</title>
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="wrap">
+				<a href="#"><img src="img/xylogo.png" id="xylogo"></a>
+				<div class="wrap-two">
+					<div class="register">
+						<div class="reg-one">
+							<h1>学员管理注册系统</h1>
+						</div>
+						<div class="reg-two">
+							<select id="select">
+								<option>学生</option>
+								<option>教师</option>
+								<option>管理员</option>
+							</select>
+							<form class="form">
+								<label>
+									<h4>账号</h4><input type="text" placeholder="请输入账号" class="reg-two-input1" id="username"/>
+									<span id="usernamets"></span>
+								</label>
+								<br />
+								<label>
+									<h4>密码</h4><input type="password" placeholder="请输入密码" class="reg-two-input2" id="password"/>
+									<span id="passwordts"></span>
+								</label>
+								<br />
+								<label>
+									<h4>确认密码</h4><input type="password" placeholder="请确认密码" class="reg-two-input3" id="sr"/>									
+								    <br />
+									<span id="span-yzm"><a href="index2.html">注册成功？点击登录</a></span>
+								</label>
+
+							</form>
+							<input type="button" value="注册" id="btn2" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer">
+				<p>
+					郑州市郑东新区龙子湖高校园区平安大道210号 河南职业技术学院 豫ICP备10002213号 郑公备：41010029000143 网络警察
+				</p>
+			</div>
+		</div>
+
+		<script>
+			var unts = document.getElementById("usernamets");
+			var pwdts = document.getElementById("passwordts");
+			var un = document.getElementById("username");
+			var pwd = document.getElementById("password");
+			var dl = document.getElementById("btn2");
+			var sr = document.getElementById('sr');
+
+			var unreg = /^[a-z|A-Z][0-9|a-z|A-Z]{7,10}$/ig;
+			var pwdreg = /^[0-9|a-z|A-Z]{6,8}$/ig;
+			dl.onclick = function() {
+
+				if(un.value.match(unreg)) {
+					unts.innerHTML = '';
+					if(pwd.value.match(pwdreg)) {
+						pwdts.innerText = "";
+					} else {
+						pwdts.innerText = "密码为6-8位";
+					}
+					if(pwd.value == sr.value && pwd.value !== '') {
+						alert('注册成功');
+					} else {
+						alert('两次密码不一致，请重新输入');
+					}
+				} else {
+					unts.innerHTML = '以字母开头8-10位';
+					alert('账号格式错误');
+				}
+
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,114 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	width:1519px;
+	height: 100%;
+	background-image: linear-gradient(to right, #5081E9, #2FB6E0);
+}
+
+.wrap {
+	width: 1200px;
+	height: 900px;
+}
+
+#xylogo{
+	margin-left: 500px;
+	margin-top: 30px;
+}
+/*-----------------------------------------------*/
+
+.wrap-two {
+	width: 600px;
+	height:300px;
+	margin-left: 400px;
+}
+
+.register {
+	width: 600px;
+	height: 500px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.reg-one {
+	width: 800px;
+	height: 100px;
+	display: inline-block;
+}
+
+.reg-one>h1 {
+	font-weight: 200;
+	margin-left: 160px;
+	margin-top: 30px;
+}
+
+
+/*-------------------------------------------*/
+
+.form>label>h4{
+	display: inline-block;
+		margin-left: 160px;
+}
+.reg-two-input1{
+	width: 227px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 15px;
+	border: 1px solid gainsboro;
+	border-radius: 2px;
+	
+}
+.reg-two-input2{
+	width: 227px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 15px;
+	border: 1px solid gainsboro;
+	border-radius: 2px;
+}
+.reg-two-input3{
+	width: 195px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 15px;
+	border: 1px solid gainsboro;
+	border-radius: 2px;
+}
+#select {
+	width: 280px;
+	height: 50px;
+	margin-left: 160px;
+	border: 1px solid gainsboro;
+	border-radius: 2px;
+}
+
+#btn2 {
+	width: 280px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 160px;
+	background-color: deepskyblue;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	font-weight: 800;
+}
+#span-yzm a{
+	margin-left: 160px;
+	text-decoration: none;
+}
+/*----------------------------------------------------*/
+.footer{
+	width: 100%;
+	height: 18px;
+	position: relative;
+	
+}
+.footer>p{
+	position: absolute;
+	top: -50px;
+	left: 300px;
+}

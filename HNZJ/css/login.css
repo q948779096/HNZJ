@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1519px;
+	height: 100%;
+	background-image: linear-gradient(to right, #5081E9, #2FB6E0);
+	position: relative;
+}
+
+.logo>a>img {
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
+.register {
+	width: 100%;
+	height: 620px;
+	background-image: linear-gradient(to right, #5081E9, #2FB6E0);
+	overflow: hidden;
+}
+
+.reg-lb img {
+	width: 1519px;
+	height: 420px;
+}
+
+.reg-lb>ul {
+	width: 4650px;
+	height: 100%;
+}
+
+.reg-lb>ul>li {
+	display: inline-block;
+	list-style: none;
+	float: left;
+}
+
+#li-lb1 {
+	display: inline-block;
+	display: block;
+}
+
+.container ul {
+	/*1.动画名字 动画时间 动画速度 动画次数 正反*/
+	animation: scroll 8s linear infinite alternate;
+}
+
+
+/*声明动画*/
+
+@keyframes scroll {
+	0%,30% {margin-left: 0%;}
+	45%,60% {margin-left: -100%;}
+	75%,100% {margin-left: -200%;}
+}
+/*-----------------------------------------------*/
+.reg-text{
+	width: 500px;
+	height: 420px;
+	display: inline-block;
+	float: right;
+	margin-top: -620px;
+	margin-right: 100px;
+	background: rgb(255,255,255,0.7);
+	
+}
+.reg-one {
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	margin-left: 150px;
+	margin-top: 10px;
+}
+
+
+
+
+/*-------------------------------------------*/
+
+.form>label>h4{
+	display: inline-block;
+	margin-left: 220px;
+}
+.reg-two-input1{
+	width: 300px;
+	height: 50px;
+	margin-left: 80px;
+	margin-top: 15px;
+	background: rgb(255,255,255,0.7);
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+.reg-two-input2{
+	width: 300px;
+	height: 50px;
+	margin-left: 80px;
+	margin-top: 15px;
+	background: rgb(255,255,255,0.7);
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+.reg-two-input3{
+	width: 130px;
+	height: 45px;
+	margin-left: 80px;
+	margin-top: 15px;
+	background: rgb(255,255,255,0.7);
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+#select {
+	width: 300px;
+	height: 50px;
+	margin-left: 80px;
+	background: rgb(255,255,255,0.7);
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+#btn2 {
+	width: 300px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 80px;
+	background-color: deepskyblue;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	font-weight: 800;
+	border-radius: 5px;
+}
+.yzm{
+	width: 100px;
+	height: 45px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-top: -66px;
+	margin-left: 270px;
+	/*添加点击效果*/
+	cursor: pointer;
+}
+#span-yzm a{
+	margin-left: 80px;
+	text-decoration: none;
+}
+/*----------------------------------------------------*/

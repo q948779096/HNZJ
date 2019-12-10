@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "宋体";
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+.banner{
+	width: 1300px;
+	height: 600px;
+	border: 1px solid black;
+}
+.ban1 {
+	width: 1300px;
+	height: 30px;
+	background-color: lightgray;
+}
+
+.ban1 a {
+	line-height: 30px;
+	color: black;
+}
+/*----------------------------------------------------*/
+.ban2-1{
+	width: 1300px;
+	height: 60px;
+	
+	margin-top: 20px;
+}
+#chaxun{
+	margin-top: 10px;
+	margin-left: 100px;
+
+}
+#ban2-1-a{
+	color: black;
+}
+#span-name{
+	margin-left: 100px;
+}
+#ban2-1-btn1{
+	width: 100px;
+	height: 20px;
+	color: white;
+	background-image: linear-gradient(to right, #5081E9, #2FB6E0);
+	border: hidden;
+	border-radius: 5px;
+}
+#ban2-2-table{
+	position: relative;
+	margin-top: 20px;
+	border-bottom: 1px solid black;
+}
+#ban2-2-table td{
+	width: 180px;
+	height: 30px;
+	text-align: center;
+}
+.table-tr1 {
+	background-color: #DCDCDC;
+}
+#table-a1{
+	color: dodgerblue;
+}
+#table-a2{
+	color: red;
+}

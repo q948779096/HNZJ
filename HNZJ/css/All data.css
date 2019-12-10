@@ -1,0 +1,117 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "宋体";
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+.banner{
+	width: 1300px;
+	height: 600px;
+	border: 1px solid black;
+}
+.ban1 {
+	width: 1300px;
+	height: 30px;
+	background-color: lightgray;
+}
+
+.ban1 a {
+	line-height: 30px;
+	color: black;
+}
+/*----------------------------------------------------*/
+.ban2-1{
+	width: 1300px;
+	height: 60px;
+	
+	margin-top: 20px;
+}
+#chaxun{
+	margin-top: 10px;
+	margin-left: 100px;
+
+}
+#ban2-1-a{
+	color: black;
+}
+#span-name{
+	margin-left: 100px;
+}
+#ban2-1-btn1{
+	width: 100px;
+	height: 20px;
+	color: white;
+	background-image: linear-gradient(to right, #5081E9, #2FB6E0);
+	border: hidden;
+	border-radius: 5px;
+}
+#ban2-2-table{
+	position: relative;
+	margin-top: 20px;
+	border-bottom: 1px solid black;
+}
+#ban2-2-table td{
+	width: 150px;
+	height: 30px;
+	text-align: center;
+}
+#ban2-2-table tr:hover{
+	background-color: #DCDCDC;
+}
+.table-tr1 {
+	background-color: #DCDCDC;
+}
+#table-a1{
+	color: dodgerblue;
+}
+#table-a2{
+	color: red;
+}
+/*---------------------------------*/
+.ban2-2-ul{
+		position: absolute;
+		right: 100px;
+		margin-top: 10px;
+}
+.ban2-2-ul li{
+	float: left;
+	margin-left: 5px;
+	border: 1px solid black;
+	margin-left: 10px;
+}
+.ban2-2-ul li:hover{
+	background-color: #DCDCDC;
+}
+#ban2-2-li1{
+	border: 0;
+}
+#ban2-2-li1:hover{
+	border: 0;
+	background-color: white;
+}
+.ban2-2-ul span{
+	font-size: 12px;
+}
+.ban2-2-ul a{
+	color: black;
+}
+.banner-two {
+	width: 1300px;
+	height: 600px;
+	border: 1px solid black;
+	display: inline-block;
+	float: right;
+	
+}
+#ifr{
+	width: 1300px;
+	height: 600px;
+}
+

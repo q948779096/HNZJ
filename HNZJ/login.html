@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>河南职业技术学院教务系统</title>
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="wrap">
+				<div class="logo">
+					<a href="#"><img src="img/xylogo.png"></a>
+				</div>
+				<div class="register">
+					<div class="reg-lb">
+						<ul id="ul">
+							<li id="li-lb1"><img src="img/LB1.jpg"></li>
+							<li><img src="img/LB2.jpg"></li>
+							<li><img src="img/LB3.jpg"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="reg-text">
+					<div class="reg-one">
+						<h2>学院管理系统</h2>
+					</div>
+					<div class="reg-two">
+						<select id="select">
+							<option>学生</option>
+							<option>教师</option>
+							<option>管理员</option>
+						</select>
+						<form class="form">
+							<label>
+									<input type="text" placeholder="请输入账号" class="reg-two-input1" id="username"/>
+									<span id="usernamets"></span>
+							</label>
+							<br />
+							<label>
+									<input type="password" placeholder="请输入密码" class="reg-two-input2" id="password"/>
+									<span id="passwordts"></span>
+							</label>
+							<br />
+							<label>
+									<input type="text" placeholder="验证码" class="reg-two-input3" id="sr"/>
+									<br />
+									<span id="span-yzm"><a href="register.html">没有账号？点击注册</a></span>
+							</label>
+
+						</form>
+						<div class="yzm" id="yzm"></div>
+						<input type="button" value="登录" id="btn2"   />
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script>
+			var unts = document.getElementById("usernamets");
+			var pwdts = document.getElementById("passwordts");
+			var un = document.getElementById("username");
+			var pwd = document.getElementById("password");
+			var dl = document.getElementById("btn2");
+			var sr = document.getElementById("sr");
+			var sjyzm = document.getElementById("sjyzm");
+
+			var unreg = /^[0-9|a-z|A-Z]{7,10}$/ig;
+			var pwdreg = /^[0-9|a-z|A-Z]{6,8}$/ig;
+			dl.onclick = function() {
+
+				if(un.value.match(unreg)) {
+					unts.innerHTML = '';
+				} else {
+					unts.innerHTML = '字母开头10位';
+				}
+
+				if(pwd.value.match(pwdreg)) {
+					pwdts.innerText = "";
+				} else {
+					pwdts.innerText = "密码为6-8位";
+				}
+				if(un.value==1836212037&&pwd.value==6858197){
+					location.href=("Backstage.html");
+				}else{
+					alert("账号信息错误，请重新登入");
+				}
+				
+			}
+			//验证码
+			var btn = document.getElementById('btn');
+			var yzm = document.getElementById("yzm");
+			var str = 'abcdefghijklmnopqrstuvwxyz0123456789' //36
+			var arr = [];
+			var flag = true;
+			var colorarr = ["red", "blue", "gray", "yellow", "green"];
+			var bgcolor = ["orangered", "blueviolet", "wheat", "lightgray", "greenyellow"];
+
+			function getRandom(a, b) {
+				return Math.floor(Math.random() * (b + 1 - a) + a);
+			}
+
+			yzm.onclick = function() {
+				var arr = [];
+				yzm.innerHTML = "";
+				for(var i = 0; i < 4; i++) {
+					var ran = getRandom(0, str.length - 1);
+					flag = true;
+					for(var j = 0; j < arr.length; j++) {
+						if(arr[j] == str[ran]) {
+							flag = false; //重复false不保存变量
+							i--; //重新循环一次 
+						}
+					}
+					if(flag) {
+						arr.push(str[ran]);
+					}
+				}
+				//字体大小颜色
+				for(var i = 0; i < arr.length; i++) {
+					var colorran = getRandom(0, 5);
+					var sizeran = getRandom(15, 35);
+					//每一次循环都有一个 arr的值存入到span标签中
+					var node = document.createElement('span');
+					node.innerHTML = arr[i];
+					node.style.color = colorarr[colorran];
+					node.style.fontSize = sizeran + "px";
+					yzm.appendChild(node);
+
+				}
+				//div的背景颜色
+				var bgcolorarr = getRandom(0, 3);
+				yzm.style.backgroundColor = bgcolor[bgcolorarr];
+				console.log(bgcolorarr);
+			}
+		</script>
+	</body>
+
+</html>
